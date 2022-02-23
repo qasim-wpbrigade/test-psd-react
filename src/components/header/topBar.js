@@ -1,7 +1,7 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 
-const TopNavData = [
+const topNavData = [
     {
         name: 'daop randiop',
         link: '/'
@@ -25,11 +25,17 @@ const TopNavData = [
 ]
 
 const TopBar = () => {
+  const [show, setshow] = useState(false);
+  const [search, setsearch] = useState("");
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+  }
   return (
     <div className="headerTopBar">
         <div className="container">
           <ul className="topBarNav">
-                {TopNavData.map((item, index) => {
+                {topNavData.map((item, index) => {
                     return (
                         <li key={index}>
                             <Link to={item.link}>{item.name}</Link>
@@ -38,11 +44,11 @@ const TopBar = () => {
                 })}
           </ul>
           <div className="search">
-            <button className='search-btn'></button>
-            <form className="search-form">
+            <button onClick={() => setshow(!show)} className='search-btn'></button>
+            <form onSubmit={handleSearch} className={`search-form ${show && 'show'}`}>
               <h6>search</h6>
               <p>Lörem ipsum antipöskapet treheten </p>
-              <input type="search" placeholder='search' id='search' />
+              <input type="search" value={search} onChange={e => setsearch(e.target.value)} placeholder='search' id='search' />
               <button className='btn' type="submit">Kagt maska</button>
             </form>
           </div>

@@ -67,6 +67,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
+    z-index: 1;
 }
 
 .headerTopBar .search-form.show{
@@ -92,4 +93,137 @@
 
 .headerTopBar .search-form button{
     margin-top: 20px;
+}
+
+.headerBottom{
+    background-color: #ffffff;
+}
+
+.headerBottom .container{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.brand-logo{
+    max-width: 176px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.brand-logo img{
+    height: 100%;
+    width: auto;
+}
+
+.mainNav{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.mainNav > li > a{
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 25px;
+    color: var(--color-secondary);
+    position: relative;
+    text-decoration: none !important;
+    text-transform: capitalize;
+}
+
+.mainNav > li > a:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-secondary);
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all;
+    opacity: 0;
+}
+
+.mainNav > li > a:hover:after,
+.mainNav > li.active > a:after{
+    opacity: 1;
+}
+
+.headerBottom > .container .btn{
+    margin-left: 25px;
+}
+
+.mainNav li.hasSubmenu{
+    position: relative;
+}
+
+.mainNav > li ul{
+    list-style: none;
+    position: absolute;
+    top: 70px;
+    background-color: #E4F5FF;
+    width: 370px;
+    left: 0;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all;
+}
+
+.mainNav > li > ul > li ul{
+    left: 100%;
+    top: 0;
+}
+
+.mainNav li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mainNav > li ul > li > a{
+    padding: 10px 35px;
+    color: var(--color-secondary);
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s all;
+}
+
+.mainNav li > a:hover{
+    background-color: #ffffff;
+    text-decoration: underline;
+}
+
+.headerFormPopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerFormPopup .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    cursor: pointer;
+}
+
+.requestInformationForm{
+    background-color: #ffffff;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    width: 930px;
+    max-width: 95vw;
 }
