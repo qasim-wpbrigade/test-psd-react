@@ -1,0 +1,95 @@
+.header{
+    position: sticky;
+    top: 0;
+}
+
+.headerTopBar{
+    background-color: var(--color-secondary);
+}
+
+.headerTopBar .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 48px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.topBarNav{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topBarNav > li > a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.61;
+    display: inline-block;
+    margin: 0 29px;
+    padding: 5px 0;
+}
+
+.headerTopBar .search{
+    position: relative;
+}
+
+.headerTopBar .search > .search-btn{
+    background: url('../images/search-icon.svg') center no-repeat;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    transition: 0.3s all;
+}
+
+.headerTopBar .search > .search-btn:hover{
+    opacity: 0.7;
+}
+
+.headerTopBar .search-form{
+    position: absolute;
+    top: calc(100% + 12px);
+    background-color: #ffffff;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    padding: 10px 16px 27px;
+    display: flex;
+    right: 0;
+    flex-direction: column;
+    width: 303px;
+    transition: 0.3s all;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.headerTopBar .search-form.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.headerTopBar .search-form h6{
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 28px;
+}
+
+.headerTopBar .search-form p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.headerTopBar .search-form input{
+    margin-top: 21px;
+}
+
+.headerTopBar .search-form button{
+    margin-top: 20px;
+}
