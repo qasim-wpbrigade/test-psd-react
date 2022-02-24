@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/skt-logo.svg";
 import { mainNavData } from "./mainNavData";
 
-const HeaderBottom = () => {
+const HeaderBottom = ({setShowPopup}) => {
   return (
     <div className="headerBottom">
       <div className="container">
@@ -43,9 +43,9 @@ const HeaderBottom = () => {
             );
           })}
         </ul>
-        <Link className="btn" to="/">
+        <button className="btn" onClick={() => setShowPopup(true)}>
           Kagt maska.
-        </Link>
+        </button>
       </div>
     </div>
   );

@@ -207,6 +207,29 @@
     z-index: 100;
     display: flex;
     justify-content: flex-end;
+    transition: 0.3s all;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.headerFormPopup.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.headerFormPopup .close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    min-height: 30px;
+    background: url('../images/close-icon.svg') right center no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s all;
+    z-index: 3;
+    padding-right: 40px;
+    text-transform: uppercase;
 }
 
 .headerFormPopup .overlay{
@@ -226,4 +249,89 @@
     z-index: 1;
     width: 930px;
     max-width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    transition: 0.3s all;
+    transform: translateX(100%);
+}
+
+.headerFormPopup.active .requestInformationForm{
+    transform: translateX(0);
+}
+
+.requestInformationForm .form-inner{
+    max-width: 578px;
+    width: 100%;
+}
+
+.requestInformationForm .form-text{
+    max-width: 408px;
+}
+
+.requestInformationForm .form-text h4{
+    font-size: 36px;
+    line-height: 1.5;margin-top: 24px;
+}
+
+.requestInformationForm .form-text p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 6px;
+    font-weight: 400;
+}
+
+.requestInformationForm .form-fields{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.requestInformationForm .form-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 18px);
+    margin: -9px;
+    margin-top: 18px;
+}
+
+.requestInformationForm .form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.requestInformationForm .form-group label{
+    font-size: 10px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: rgba(141, 141, 141, 1);
+    position: absolute;
+    left: 13px;
+    top: 7px;
+}
+
+.requestInformationForm .form-group input,
+.requestInformationForm .form-group select{
+    height: 50px !important;
+    border-radius: 0 !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    padding-top: 25px !important;
+    background-color: transparent !important;
+}
+
+.requestInformationForm .form-row-full{
+    margin-top: 27px;
+}
+
+.requestInformationForm .form-row .form-group{
+    width: calc(50% - 18px);
+    margin: 9px;
+}
+
+.requestInformationForm  button[type="submit"]{
+    margin-top: 60px;
 }
