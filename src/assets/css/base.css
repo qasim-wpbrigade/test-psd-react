@@ -11,6 +11,10 @@
     --color-secondary: #172933;
 }
 
+.App{
+    min-height: 100vh;
+}
+
 body,
 p {
     font-family: "Poppins", sans-serif;
@@ -165,4 +169,9 @@ body .btn{
 body .btn:hover{
     opacity: 0.9;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+body .main{
+    position: relative;
+    z-index: -1;
 }

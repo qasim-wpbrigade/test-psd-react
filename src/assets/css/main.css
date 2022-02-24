@@ -1,4 +1,6 @@
 @import url('./base.css');
 @import url('./header.css');
 @import url('./footer.css');
-@import url('./responsive.css');
+@import url('./heroSection.css');
+@import url('./responsive-1024px.css');
+@import url('./responsive-767px.css');
