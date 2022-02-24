@@ -1,0 +1,55 @@
+.termSection{
+    padding: 100px 0
+}
+
+.termSection .container{
+    max-width: 970px
+}
+
+.term-box{
+    background: #FFFFFF;
+    border: 1px solid #E1E7EB;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+
+.term-box .heading{
+    padding: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.term-box table{
+    width: 100%
+}
+
+.term-box table th{
+    width: 17%;
+    padding-left: 30px;
+}
+
+.term-box table th,
+.term-box table td{
+    text-align: start;
+    padding: 16px 0;
+    text-transform: capitalize;
+    border-top: 1px solid #E1E7EB;
+    padding-left: 30px;
+}
+
+.termBoxFooter{
+    background: #000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 20px
+}
+
+.termBoxFooter h5{
+    font-size: 22px;
+    margin-right: 30px
+}
+
+.termBoxFooter a{
+    white-space: nowrap;
+}

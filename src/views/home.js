@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSection from "../components/heroSection";
+import SliderSection from "../components/slider";
 import TermSection from "../components/termSection";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <HeroSection />
             <TermSection />
+            <SliderSection />
         </>
     );
 };

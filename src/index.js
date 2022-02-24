@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'swiper/css';
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 import './assets/css/main.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
