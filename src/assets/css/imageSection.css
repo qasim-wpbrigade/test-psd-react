@@ -1,0 +1,53 @@
+.imageSection{
+    position: relative;
+    background: var(--color-primary);
+    padding: 90px 0
+}
+
+.imageSection .overlay{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.imageSection .overlay img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imageSection .container{
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .col-6{
+    width: 50%;
+}
+
+.imageSection .col-6{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSection .content{
+    max-width: 550px;
+}
+
+.imageSection .content h2{
+    font-size: 50px;
+}
+
+.imageSection .content p{
+    margin-top: 10px
+}

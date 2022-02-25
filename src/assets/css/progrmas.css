@@ -1,0 +1,111 @@
+.programsSection{
+    padding: 100px 0;
+}
+
+.programsSection .container{
+    max-width: 1322px;
+}
+
+.programs-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 30px);
+    margin: -15px;
+}
+
+.programBox{
+    width: calc(33.33% - 30px);
+    margin: 15px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.programBox .title{
+    text-transform: capitalize;
+}
+
+.programBox .desc{
+    margin-top: 16px;
+}
+
+.programBox .arrow-btn{
+    margin-top: 30px;
+    display: inline-block;
+    max-width: max-content;
+}
+
+.program-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F5F5F5;
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    z-index: 1;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.program-info ul{
+    list-style: none;
+}
+
+.program-info ul li:not(:first-child){
+    margin-top: 24px;
+}
+
+.program-info ul li span:nth-child(1){
+    color: #5D6F80;
+    min-width: 220px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.programBox:hover .program-info{
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon{
+    position: relative;
+    padding-left: 25px;
+}
+
+.icon:after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bank-icon:after{
+    background-image: url('../images/university-solid.svg');
+}
+
+.calander-icon:after{
+    background-image: url('../images/calander.svg');
+}
+
+.clock-icon:after{
+    background-image: url('../images/clock.svg');
+}
+
+.star-icon:after{
+    background-image: url('../images/star.svg');
+}
+
+.cap-icon:after{
+    background-image: url('../images/cap.svg');
+}

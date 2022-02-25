@@ -170,3 +170,19 @@ body .btn:hover{
     opacity: 0.9;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
 }
+
+
+body .arrow-btn{
+    display: inline-block;
+    text-transform: capitalize;
+    background: url('../images/btn-arrow.svg') left top no-repeat;
+    background-size: 30px;
+    padding-left: 40px;
+    color: var(--color-secondary);
+    font-weight: 700;
+    line-height: 30px;
+}
+
+body .watch-btn{
+    background-image: url("../images/watch-btn-icon.svg");
+}

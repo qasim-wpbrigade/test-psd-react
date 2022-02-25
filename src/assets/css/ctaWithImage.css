@@ -1,0 +1,40 @@
+.ctaWithImage{
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.bg-blue{
+    background-color: #E6F2F5;
+    background-image: url('../images/pattern.png');
+}
+
+.ctaWithImage .row{
+    justify-content: space-between;
+}
+
+.ctaWithImage.reverse .row{
+    flex-direction: row-reverse;
+}
+
+.ctaWithImage .col-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ctaWithImage .col-6{
+    width: calc(50% - 35px);
+}
+
+.ctaWithImage .col-6 > img{
+    width: 100%;
+    height: auto;
+}
+
+.ctaWithImage .content p{
+    margin-top: 20px;
+}
+
+.ctaWithImage .content > a{
+    margin-top: 30px;
+}

@@ -24,7 +24,7 @@ const SliderSection = () => {
                     <Swiper spaceBetween={30} slidesPerView={4} watchSlidesProgress={true} modules={[Navigation, Thumbs, Pagination]} pagination={true} className="tabular-items" navigation={true} thumbs={{ swiper: thumbsSwiper }} >
                         {
                             sliderItems.map((row) => (
-                                <SwiperSlide>
+                                <SwiperSlide key={row.id}>
                                     <div className="thumbail" key={row.id}>
                                         <img src={row.img} alt={row.title} />
                                     </div>
