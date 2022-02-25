@@ -1,75 +1,42 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Thumbs } from "swiper";
-import img1 from "../../assets/images/slider-img1.jpg";
+import { Navigation, Thumbs, Pagination } from "swiper";
+import {tabs, sliderItems} from './sliderData';
+
 
 const SliderSection = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
-        <div className="tab-slider">
+        <div className="tabSliderSection">
             <div className="container">
-                <Swiper
-                    loop={true}
-                    spaceBetween={10}
-                    modules={[Navigation, Thumbs]}
-                    slidesPerView={6}
-                    className="mySwiper2"
-                    onSwiper={setThumbsSwiper}
-                    navigation={true}
-                >
-                    <SwiperSlide>
-                        <h6>lOREM IPSUM</h6>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <h6>NADAIOS</h6>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <h6>Gåmiktig</h6>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <h6>Gigagen</h6>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <h6>Hexara</h6>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <h6>Nanett</h6>
-                    </SwiperSlide>
-                </Swiper>
-                <Swiper
-                    style={{
-                        "--swiper-navigation-color": "red",
-                        "--swiper-pagination-color": "red",
-                    }}
-                    loop={true}
-                    spaceBetween={10}
-                    slidesPerView={4}
-                    watchSlidesProgress={true}
-                    modules={[Navigation, Thumbs]}
-                    className="mySwiper"
-                    navigation={true}
-                    thumbs={{ swiper: thumbsSwiper }}
-                >
-                    <SwiperSlide>
-                        <img src={img1} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img1} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img1} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img1} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img1} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={img1} />
-                    </SwiperSlide>
-                </Swiper>
+                <h4 className="heading">Lörem ipsum dumpling böhet</h4>
+                <div className="tabular-slider">
+                    <Swiper spaceBetween={10} modules={[Navigation, Thumbs]} slidesPerView={6} className="tabSlider" onSwiper={setThumbsSwiper} navigation={true} >
+                        {
+                            tabs.map((row) => (
+                                <SwiperSlide key={row.id}>
+                                    <h6>{row.title}</h6>
+                                </SwiperSlide>
+                            ))
+                        }
+                    </Swiper>
+                    <Swiper spaceBetween={30} slidesPerView={4} watchSlidesProgress={true} modules={[Navigation, Thumbs, Pagination]} pagination={true} className="tabular-items" navigation={true} thumbs={{ swiper: thumbsSwiper }} >
+                        {
+                            sliderItems.map((row) => (
+                                <SwiperSlide>
+                                    <div className="thumbail" key={row.id}>
+                                        <img src={row.img} alt={row.title} />
+                                    </div>
+                                    <div className="content">
+                                        <h6>{row.title}</h6>
+                                        <p>{row.desc}</p>
+                                    </div>
+                                </SwiperSlide>
+                            ))
+                        }
+                    </Swiper>
+                </div>
             </div>
         </div>
     );
