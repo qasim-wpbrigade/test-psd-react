@@ -1,0 +1,50 @@
+.accordion-item:not(:first-child){
+    margin-top: 4px;
+}
+
+.accordion-title{
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s all;
+    position: relative;
+}
+
+.accordion-title:after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 11px;
+    width: 15px;
+    background: url('../images/arrow-down.svg') center no-repeat;
+    background-size: 15px;
+    transition: 0.3s all;
+}
+
+.accordion-title h6{
+    font-weight: 500;
+} 
+
+.accordion-title.active{
+    background: #172933;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+.accordion-title.active:after{
+    background: url('../images/arrow-down-white.svg') center no-repeat;
+    transform: rotate(-180deg)
+}
+
+.accordion-content{
+    display: none;
+    padding: 24px 0 20px;
+}
+
+.accordion-content p{
+    color: #798389;
+    font-weight: 400;
+}

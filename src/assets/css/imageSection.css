@@ -51,3 +51,16 @@
 .imageSection .content p{
     margin-top: 10px
 }
+
+.questionsSection{
+    padding: 100px 0;
+}
+
+.questionsSection .row{
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.questionsSection .row .col-6{
+    width: calc(50% - 15px);
+}
