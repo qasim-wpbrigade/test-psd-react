@@ -1,0 +1,60 @@
+.feeComparison{
+    padding: 100px 0;
+}
+
+.feeComparison .container{
+    max-width: 742px;
+}
+
+.feeComparison h2{
+    text-align: center;
+}
+
+.comparison-wrapper{
+    margin-top: 60px;
+}
+
+.comparison-box{
+    display: flex;
+    align-items: center;
+    padding: 24px 0 20px;
+}
+
+.comparison-box .university{
+    text-align: end;
+    min-width: 240px;
+}
+
+.comparison-box .university img{
+    max-width: 207px;
+    height: auto;
+}
+
+.comparison-box .fee{
+    position: relative;
+    margin-left: 30px;
+    flex: 1;
+}
+
+.comparison-box .fee h6{
+    position: absolute;
+    top: -40px;
+    left: 50px;
+}
+
+.comparison-box .percentage{
+    width: 100%;
+    height: 16px;
+    border-radius: 50px;
+    background: #E1E7EB;
+    position: relative;
+    overflow: hidden;
+}
+
+.comparison-box .percentage > span{
+    position: absolute;
+    height: 100%;
+    background-color: #172933;
+    left: 0;
+    top: 0;
+}

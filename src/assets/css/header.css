@@ -159,6 +159,10 @@
     margin-left: 25px;
 }
 
+.headerBottom > .container .btn:after{
+    width: 170px;
+}
+
 .mainNav li.hasSubmenu{
     position: relative;
 }

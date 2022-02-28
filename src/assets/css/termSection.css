@@ -53,3 +53,6 @@
 .termBoxFooter a{
     white-space: nowrap;
 }
+.termBoxFooter a:after{
+    width: 209px;
+}

@@ -1,0 +1,68 @@
+@media (max-width: 767px) {
+    body h1, body .h1 {
+        font-size: 36px;
+        line-height: 1.28;
+    }
+
+    .hero-content:after{
+        content: none;
+    }
+
+    .hero-content p{
+        font-size: 18px;
+    }
+
+    .divider{
+        height: 4px;
+        width: 60px;
+    }
+
+    .hero-content{
+        min-height: 200px;
+        padding: 60px 15px;
+        width: 100%;
+        background-color: rgba(5, 33, 59, 0.8);
+    }
+
+    .hero-section .hero-overlay{
+        width: 100%;
+    }
+
+    .hero-section .container{
+        padding: 0;
+    }
+
+    .hero-content .divider{
+        margin-top: 16px;
+    }
+
+    .hero-content p{
+        font-size: 16px;
+    }
+
+    .termSection{
+        padding: 50px 0;
+    }
+
+    .term-box table th{
+        width: 40%;
+    }
+
+    .termBoxFooter{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .termBoxFooter a{
+        margin-top: 20px;
+    }
+
+    .term-box .heading{
+        padding: 28px 30px 20px;
+    }
+
+    .tabular-items .swiper-button-prev,
+    .tabular-items .swiper-button-next {
+        padding-bottom: 65%;
+    }
+}

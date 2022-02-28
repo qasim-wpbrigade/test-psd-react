@@ -1,0 +1,40 @@
+.cta-section{
+    padding: 76px 0;
+}
+
+.cta-section .container{
+    max-width: 1452px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-section h2{
+    text-transform: capitalize;
+}
+
+.cta-section .divider{
+    margin-top: 24px;
+}
+
+.cta-section p{
+    margin-top: 24px;
+    font-size: 22px;
+}
+
+.btns-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: -8px;
+    width: calc(100% + 16px);
+    flex-wrap: wrap;
+}
+
+.btns-wrapper .btn{
+    margin: 8px;
+}
+
+.cta-section .btns-wrapper{
+    margin-top: 40px;
+}
