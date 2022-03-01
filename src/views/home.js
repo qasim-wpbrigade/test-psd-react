@@ -14,16 +14,16 @@ import TermSection from "../components/termSection";
 const Home = () => {
     return (
         <>
-            {/* <HeroSection /> */}
-            {/* <TermSection /> */}
+            <HeroSection />
+            <TermSection />
             <TabularSlider />
-            {/* <ImageSection />
+            <ImageSection />
             <Programs />
             <CtaWithImage />
             <Questions />
             <FeeComparison />
             <Cta />
-            <ImgSlider /> */}
+            <ImgSlider />
         </>
     );
 };

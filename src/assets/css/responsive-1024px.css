@@ -13,6 +13,11 @@
         font-size: 48px;
     }
 
+    body h2,
+    body .h2 {
+        font-size: 41px;
+    }
+
     .headerTopBar {
         display: none;
     }
@@ -123,5 +128,29 @@
     .tabular-items .swiper-button-prev,
     .tabular-items .swiper-button-next {
         padding-bottom: 21%;
+    }
+
+    .imageSection{
+        padding: 70px 0
+    }
+
+    .programBox{
+        width: calc(50% - 30px);
+    }
+
+    .ctaWithImage{
+        padding: 70px 0;
+    }
+
+    .ctaWithImage .col-6{
+        width: calc(50% - 15px);
+    }
+
+    .questionsSection{
+        padding: 70px 0;
+    }
+
+    .feeComparison{
+        padding: 70px 0;
     }
 }

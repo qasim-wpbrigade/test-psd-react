@@ -4,6 +4,20 @@
         line-height: 1.28;
     }
 
+    body h4, body .h4{
+        font-size: 24px;
+    }
+
+    body h2,
+    body .h2 {
+        font-size: 32px;
+    }
+
+    body h3,
+    body .h3 {
+        font-size: 28px;
+    }
+
     .hero-content:after{
         content: none;
     }
@@ -64,5 +78,124 @@
     .tabular-items .swiper-button-prev,
     .tabular-items .swiper-button-next {
         padding-bottom: 65%;
+    }
+
+    .tabSliderSection{
+        padding: 50px 0;
+    }
+
+    .tabSliderSection .tabular-slider{
+        margin-top: 23px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col-6{
+        width: 100%;
+    }
+
+    .imageSection .content{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .imageSection{
+        padding: 0;
+    }
+
+    .imageSection .overlay{
+        position: static;
+        width: 100%;
+        display: flex;
+    }
+
+    .imageSection .container{
+        padding: 50px 15px;
+    }
+
+    .imageSection .content h2{
+        font-size: 32px;
+    }
+
+    .programBox{
+        width: calc(100% - 30px);
+    }
+
+    .ctaWithImage{
+        padding: 50px 0;
+    }
+
+    .ctaWithImage .content{
+        margin-top: 20px;
+    }
+
+    .videoOverlay .play-icon{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .questionsSection{
+        padding: 50px 0;
+    }
+
+    .questionsSection .row .col-6{
+        width: 100%;
+    }
+
+    .questionsSection .row .col-6:not(:first-child){
+        margin-top: 30px;
+    }
+
+    .questionsSection .row{
+        margin-top: 30px;
+    }
+
+    .feeComparison{
+        padding: 50px 0;
+    }
+
+    .comparison-wrapper{
+        margin-top: 30px;
+    }
+
+    .comparison-box{
+        flex-direction: column;
+        padding: 10px 0;
+        align-items: flex-start;
+    }
+
+    .comparison-box .university{
+        text-align: start;
+        min-width: 150px;
+    }
+
+    .comparison-box .university img{
+        max-width: 140px;
+    }
+
+    .comparison-box .fee{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .comparison-box .fee h6{
+        right: 0;
+        left: auto;
+        top: -30px;
+    }
+
+    .cta-section{
+        padding: 50px 0;
+    }
+
+    .cta-section p{
+        font-size: 16px;
+    }
+
+    .cta-section .btns-wrapper{
+        margin-top: 20px;
     }
 }

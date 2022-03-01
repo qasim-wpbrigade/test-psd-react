@@ -34,7 +34,6 @@
 }
 
 .imageSection .col-6{
-    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +41,7 @@
 
 .imageSection .content{
     max-width: 550px;
+    padding: 0 30px;
 }
 
 .imageSection .content h2{
