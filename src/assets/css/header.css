@@ -277,7 +277,7 @@
     cursor: pointer;
 }
 
-.requestInformationForm{
+.requestInformationPopup{
     background-color: #ffffff;
     height: 100%;
     position: relative;
@@ -292,11 +292,17 @@
     transform: translateX(100%);
 }
 
-.headerFormPopup.active .requestInformationForm{
+.headerFormPopup.active .requestInformationPopup{
     transform: translateX(0);
 }
 
-.requestInformationForm .form-inner{
+.headerFormPopup .requestInformationForm{
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 578px;
+}
+
+.headerFormPopup .form-inner{
     max-width: 578px;
     width: 100%;
     padding: 20px;

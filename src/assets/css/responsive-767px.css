@@ -198,4 +198,109 @@
     .cta-section .btns-wrapper{
         margin-top: 20px;
     }
+
+    .footer-top .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 540px;
+    }
+
+    .footer-top{
+        padding: 40px 0;
+    }
+
+    .footer-top .brand-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-top .brand-info .address,
+    .footer-top .brand-info .number,
+    .footer-top .brand-info .contact{
+        padding-left: 0;
+    }
+
+    .footer-top .brand-info .address:after,
+    .footer-top .brand-info .number:after,
+    .footer-top .brand-info .contact:after{
+        content: none;
+    }
+
+    .footer .brand-logo{
+        margin-right: 0;
+        max-width: 207px;
+        height: auto;
+    }
+
+    .footer-navs{
+        padding: 0;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .footer-navs p{
+        text-align: center;
+    }
+
+
+    .footer-navs .footer-nav{
+        margin-left: 0;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .footer-navs .partners{
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .footer-navs .partners a{
+        margin: 0 6px;
+    }
+
+    .footer-bottom .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        max-width: 540px;
+    }
+
+    .footer-bottom .about{
+        margin-top: 20px;
+    }
+
+    .footer-bottom .about ul{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-wrapper{
+        padding: 50px 0;
+    }
+
+    .contact-wrapper .container{
+        flex-direction: column;
+    }
+
+    .contact-wrapper .form-wrapper{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contact-wrapper .brand-info{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .textHero .container{
+        min-height: 100px;
+    }
+
+    .google-map iframe{
+        aspect-ratio: 6/4;
+    }
 }

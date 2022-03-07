@@ -153,4 +153,8 @@
     .feeComparison{
         padding: 70px 0;
     }
+
+    .footer-navs .footer-nav {
+        grid-template-columns: minmax(0, 100px) minmax(0, 130px) minmax(0, 275px);
+    }
 }

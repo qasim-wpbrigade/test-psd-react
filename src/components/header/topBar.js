@@ -16,7 +16,7 @@ const topNavData = [
     },
     {
         name: 'contact us',
-        link: '/'
+        link: '/contact'
     },
     {
         name: '800-000-0000',

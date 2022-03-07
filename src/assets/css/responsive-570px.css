@@ -62,4 +62,8 @@
         right: 6px;
         left: auto;
     }
+
+    .form-row .form-group{
+        width: calc(100% - 18px) !important
+    }
 }
