@@ -1,5 +1,5 @@
 import React,{useEffect,useRef} from "react";
-import { slideToggle } from '../slideToggle';
+import { slideToggle, slideDown } from '../slideToggle';
 
 const Accordion = ({ data }) => {
     const accordion = useRef(null);
@@ -19,7 +19,7 @@ const Accordion = ({ data }) => {
         const firstItem = accordion.current.firstChild;
         if (firstItem) {
             firstItem.classList.add('active');
-            slideToggle(firstItem.querySelector('.accordion-content'));
+            slideDown(firstItem.querySelector('.accordion-content'));
         }
     },[])
     return (
