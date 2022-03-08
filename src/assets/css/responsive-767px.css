@@ -303,4 +303,8 @@
     .google-map iframe{
         aspect-ratio: 6/4;
     }
+
+    .footer-bottom .social-links{
+        justify-content: center;
+    }
 }
